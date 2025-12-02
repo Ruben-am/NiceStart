@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">NiceStart</string>
+    <string name="btn_login_login">Login</string>
+    <string name="btn_login_singup">Sing up</string>
+    <string name="et_login_password">Password</string>
+    <string name="et_login_user">Username</string>
+    <string name="iv_login_background">login background image</string>
+    <string name="iv_login_logo">app logo</string>
 </resources>
