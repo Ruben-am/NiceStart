@@ -16,7 +16,9 @@
         android:theme="@style/Theme.NiceStart">
         <activity
             android:name=".SingUpActivity"
-            android:exported="false" />
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/Theme.NiceStart.ActionBar"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />

@@ -32,13 +32,12 @@ public class LoginActivity extends AppCompatActivity {
             if (user.isEmpty() || password.isEmpty()) {
                 new SweetAlertDialog(this, SweetAlertDialog.ERROR_TYPE)
                         .setTitleText("Error")
-                        .setContentText("Introduce los datos para logearte")
+                        .setContentText("Enter the information to login")
                         .show();
             } else {
                 new SweetAlertDialog(this, SweetAlertDialog.SUCCESS_TYPE)
-                        .setTitleText("Hola " + user)
-                        .setContentText("Logeado correctamente")
-                        .setConfirmText("Continuar")
+                        .setTitleText("Hello " + user)
+                        .setConfirmText("Continue")
                         .setConfirmClickListener(sweetAlertDialog -> {
                             sweetAlertDialog.dismissWithAnimation();
 
