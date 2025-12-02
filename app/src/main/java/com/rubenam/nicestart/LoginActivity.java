@@ -3,6 +3,8 @@ package com.rubenam.nicestart;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.bumptech.glide.Glide;
 import com.rubenam.nicestart.databinding.ActivityLoginBinding;
 import cn.pedant.SweetAlert.SweetAlertDialog;
 
@@ -17,6 +19,8 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         initListeners();
+
+        Glide.with(this).load("https://i.pinimg.com/736x/be/76/92/be76924d3f0f2007b6804bdf6539fb15.jpg").centerCrop().into(binding.ivLoginBackground);
     }
 
     private void initListeners() {
