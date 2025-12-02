@@ -1,6 +1,11 @@
 package com.rubenam.nicestart;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,17 +13,47 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.bumptech.glide.Glide;
+import com.rubenam.nicestart.databinding.ActivitySplashBinding;
+
+@SuppressLint("CustomSplashScreen")
 public class SplashActivity extends AppCompatActivity {
+
+    private ActivitySplashBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_splash);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        // ImageView backImage = findViewById(R.id.iv_splash_backimage); sin binding
+
+        binding = ActivitySplashBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.rotation);
+        binding.ivSplashLogo.startAnimation(myAnim);
+
+        Glide.with(this)
+                .load("https://i.pinimg.com/736x/53/20/f5/5320f5fd982ebd911bc12f88b79184e6.jpg")
+                .centerCrop()
+                .into(binding.ivSplashBackimage);
+
+        openMain();
+    }
+
+    private void openMain() {
+        Handler handler = new Handler(android.os.Looper.getMainLooper());
+        handler.postDelayed(
+                new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        startActivity(intent);
+                        finish();
+                    }
+                }, 5000
+        );
     }
 }
