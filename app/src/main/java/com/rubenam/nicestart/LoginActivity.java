@@ -1,24 +1,54 @@
 package com.rubenam.nicestart;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import com.rubenam.nicestart.databinding.ActivityLoginBinding;
+import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class LoginActivity extends AppCompatActivity {
+    private ActivityLoginBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_login);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        binding = ActivityLoginBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        initListeners();
+    }
+
+    private void initListeners() {
+        // login button
+        binding.btnLoginLogin.setOnClickListener(view -> {
+            String user = binding.etLoginUser.getText().toString().trim();
+            String password = binding.etLoginPassword.getText().toString().trim();
+
+            if (user.isEmpty() || password.isEmpty()) {
+                new SweetAlertDialog(this, SweetAlertDialog.ERROR_TYPE)
+                        .setTitleText("Error")
+                        .setContentText("Introduce los datos para logearte")
+                        .show();
+            } else {
+                new SweetAlertDialog(this, SweetAlertDialog.SUCCESS_TYPE)
+                        .setTitleText("Hola " + user)
+                        .setContentText("Logeado correctamente")
+                        .setConfirmText("Continuar")
+                        .setConfirmClickListener(sweetAlertDialog -> {
+                            sweetAlertDialog.dismissWithAnimation();
+
+                            Intent intent = new Intent(this, MainActivity.class);
+                            startActivity(intent);
+                        })
+                        .show();
+            }
+        });
+
+        // sing up button
+        binding.btnLoginSingup.setOnClickListener(view -> {
+            Intent intent = new Intent(this, SingUpActivity.class);
+            startActivity(intent);
         });
     }
 }
