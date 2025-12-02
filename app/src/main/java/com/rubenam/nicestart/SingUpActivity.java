@@ -31,7 +31,7 @@ public class SingUpActivity extends AppCompatActivity {
     }
 
     private void initListeners() {
-        // login button
+        // confirm button
         binding.btnSingupConfirm.setOnClickListener(view -> {
             String user = binding.etSingupUser.getText().toString().trim();
             String password = binding.etSingupPassword.getText().toString().trim();
@@ -40,13 +40,12 @@ public class SingUpActivity extends AppCompatActivity {
             if (user.isEmpty() || password.isEmpty() || cPassword.isEmpty()) {
                 new SweetAlertDialog(this, SweetAlertDialog.ERROR_TYPE)
                         .setTitleText("Error")
-                        .setContentText("Introduce los datos para registrarte")
+                        .setContentText("Enter the information to sing up")
                         .show();
             } else {
                 new SweetAlertDialog(this, SweetAlertDialog.SUCCESS_TYPE)
-                        .setTitleText("Hola " + user)
-                        .setContentText("Registrado correctamente")
-                        .setConfirmText("Continuar")
+                        .setTitleText("Hello " + user)
+                        .setConfirmText("Continue")
                         .setConfirmClickListener(sweetAlertDialog -> {
                             sweetAlertDialog.dismissWithAnimation();
 
@@ -57,7 +56,7 @@ public class SingUpActivity extends AppCompatActivity {
             }
         });
 
-        // sing up button
+        // cancel button
         binding.btnSingupCancel.setOnClickListener(view -> {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);

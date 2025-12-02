@@ -58,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alpha="0.65"
-            android:background="@color/white"
+            android:background="@color/color_surface_white"
             android:drawableStart="@drawable/ic_user_login"
             android:hint="@string/et_singup_user" />
 
@@ -79,7 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alpha="0.65"
-            android:background="@color/white"
+            android:background="@color/color_surface_white"
             android:drawableStart="@drawable/ic_password_login"
             android:hint="@string/et_singup_password"
             android:inputType="textPassword"/>
@@ -101,7 +101,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alpha="0.65"
-            android:background="@color/white"
+            android:background="@color/color_surface_white"
             android:drawableStart="@drawable/ic_password_login"
             android:hint="@string/et_singup_passwordconfirm"
             android:inputType="textPassword"/>
