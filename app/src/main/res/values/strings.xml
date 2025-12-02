@@ -13,4 +13,5 @@
     <string name="btn_singup_cancel">Cancel</string>
     <string name="et_singup_user">Username</string>
     <string name="et_singup_password">Password</string>
+    <string name="iv_splash_logo">app logo</string>
 </resources>
