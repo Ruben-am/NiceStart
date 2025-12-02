@@ -6,4 +6,11 @@
     <string name="et_login_user">Username</string>
     <string name="iv_login_background">login background image</string>
     <string name="iv_login_logo">app logo</string>
+    <string name="iv_singup_background">sing up background image</string>
+    <string name="iv_singup_logo">app logo</string>
+    <string name="et_singup_passwordconfirm">Confirm password</string>
+    <string name="btn_singup_confirm">Confirm</string>
+    <string name="btn_singup_cancel">Cancel</string>
+    <string name="et_singup_user">Username</string>
+    <string name="et_singup_password">Password</string>
 </resources>
