@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/profile_menu_appbar"
+        android:title="@string/profile_menu_appbar"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/settings_menu_appbar"
+        android:title="@string/settings_menu_appbar"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/others_menu_appbar"
+        android:title="@string/others_menu_appbar"
+        app:showAsAction="never" />
+</menu>

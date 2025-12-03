@@ -14,4 +14,8 @@
     <string name="et_singup_user">Username</string>
     <string name="et_singup_password">Password</string>
     <string name="iv_splash_logo">app logo</string>
+    <string name="profile_menu_appbar">Profile</string>
+    <string name="settings_menu_appbar">Settings</string>
+    <string name="others_menu_appbar">Others</string>
+    <string name="iv_main_background">main background image</string>
 </resources>
