@@ -23,6 +23,10 @@ public class ProfileActivity extends AppCompatActivity {
         binding = ActivityProfileBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        android.content.SharedPreferences prefs = getSharedPreferences("user_data", MODE_PRIVATE);
+        String username = prefs.getString("current_user", "Usuario");
+        binding.tvProfileUsername.setText("@" + username);
+
         Glide.with(this)
                 .load("https://media.gq.com.mx/photos/61780a08f865d472dfcd66c8/master/w_2560%2Cc_limit/GettyImages-1225777369.jpg")
                 .circleCrop()

@@ -52,11 +52,11 @@
         app:layout_constraintTop_toBottomOf="@id/iv_profile_userpic">
 
         <TextView
+            android:id="@+id/tv_profile_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:textSize="24sp"
-            android:textStyle="bold"
             tools:text="௹Rubén" />
 
     </com.google.android.material.card.MaterialCardView>
