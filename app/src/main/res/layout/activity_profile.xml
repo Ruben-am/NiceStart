@@ -5,6 +5,88 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color_surface_blue"
     tools:context=".ProfileActivity">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:background="@color/color_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_profile_userpic"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/iv_profile_userpic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_profile"
+        tools:tint="@color/black" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_profile_addpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color_surface_white"
+        android:contentDescription="@string/fab_profile_addpic"
+        android:src="@drawable/ic_camera"
+        android:theme="@style/FabCircular"
+        app:layout_constraintBottom_toBottomOf="@id/iv_profile_userpic"
+
+        app:layout_constraintEnd_toEndOf="@id/iv_profile_userpic"
+        app:shapeAppearance="@style/FabCircular" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_profile_cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/color_surface_white"
+        app:cardCornerRadius="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_profile_userpic"
+        app:strokeColor="@color/color_text_primary_black"
+        app:strokeWidth="2dp">
+
+        <TextView
+            android:id="@+id/tv_profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="௹Rubén" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        app:cardCornerRadius="32dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintTop_toBottomOf="@id/cv_profile_cv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/color_surface_white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="@tools:sample/lorem/random" />
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

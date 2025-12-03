@@ -49,6 +49,11 @@ public class SingUpActivity extends AppCompatActivity {
                         .setConfirmClickListener(sweetAlertDialog -> {
                             sweetAlertDialog.dismissWithAnimation();
 
+                            android.content.SharedPreferences prefs = getSharedPreferences("user_data", MODE_PRIVATE);
+                            android.content.SharedPreferences.Editor editor = prefs.edit();
+                            editor.putString("current_user", user);
+                            editor.apply();
+
                             Intent intent = new Intent(this, MainActivity.class);
                             startActivity(intent);
                         })
