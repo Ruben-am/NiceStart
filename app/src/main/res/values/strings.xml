@@ -17,4 +17,5 @@
     <string name="profile_menu_appbar">Profile</string>
     <string name="settings_menu_appbar">Settings</string>
     <string name="others_menu_appbar">Others</string>
+    <string name="iv_main_background">main background image</string>
 </resources>

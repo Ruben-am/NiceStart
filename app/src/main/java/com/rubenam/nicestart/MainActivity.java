@@ -12,6 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.bumptech.glide.Glide;
 import com.rubenam.nicestart.databinding.ActivityLoginBinding;
 import com.rubenam.nicestart.databinding.ActivityMainBinding;
 
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
+        Glide.with(this).load("https://i.pinimg.com/1200x/a4/f3/ee/a4f3ee9e5e4bdd6222f026a050be49be.jpg").centerCrop().into(binding.ivMainBackground);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
