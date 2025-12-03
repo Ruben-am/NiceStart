@@ -18,4 +18,6 @@
     <string name="settings_menu_appbar">Settings</string>
     <string name="others_menu_appbar">Others</string>
     <string name="iv_main_background">main background image</string>
+    <string name="iv_profile_userpic">user picture</string>
+    <string name="fab_profile_addpic">add picture</string>
 </resources>

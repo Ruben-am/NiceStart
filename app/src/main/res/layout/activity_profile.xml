@@ -5,6 +5,61 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    tools:context=".ProfileActivity"
+    android:background="@color/color_surface_blue">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:background="@color/color_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_profile_userpic"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/iv_profile_userpic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_profile"
+        tools:tint="@color/black" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_profile_addpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/fab_profile_addpic"
+        app:layout_constraintBottom_toBottomOf="@id/iv_profile_userpic"
+        app:layout_constraintEnd_toEndOf="@id/iv_profile_userpic"
+        android:backgroundTint="@color/color_surface_white"
+        android:src="@drawable/ic_camera"
+        android:theme="@style/FabCircular"
+
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_profile_userpic"
+        android:background="@color/color_surface_white"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="௹Rubén"
+            android:textSize="24sp"
+            android:layout_marginHorizontal="16dp"
+            android:textStyle="bold"/>
+
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
