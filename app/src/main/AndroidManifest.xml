@@ -15,10 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NiceStart">
         <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".SingUpActivity"
+            android:exported="true"
             android:parentActivityName=".LoginActivity"
-            android:theme="@style/Theme.NiceStart.ActionBar"
-            android:exported="true" />
+            android:theme="@style/Theme.NiceStart.ActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="false"
