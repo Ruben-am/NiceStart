@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.bumptech.glide.Glide;
 import com.rubenam.nicestart.databinding.ActivityLoginBinding;
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        binding.srMainRefresh.setOnRefreshListener(mOnRefreshListener);
 
         Glide.with(this).load("https://i.pinimg.com/1200x/a4/f3/ee/a4f3ee9e5e4bdd6222f026a050be49be.jpg").centerCrop().into(binding.ivMainBackground);
     }
@@ -52,4 +55,15 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    protected SwipeRefreshLayout.OnRefreshListener
+            mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
+        @Override
+        public void onRefresh() {
+            Toast toast0 = Toast.makeText(MainActivity.this, "Good job refreshing", Toast.LENGTH_LONG);
+            toast0.show();
+
+            binding.srMainRefresh.setRefreshing(false);
+        }
+    };
 }
