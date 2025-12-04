@@ -17,6 +17,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <WebView
+            android:id="@+id/wv_main_bkimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <ImageView
