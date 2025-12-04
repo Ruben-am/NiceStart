@@ -52,11 +52,16 @@ public class MainActivity extends AppCompatActivity {
 
         return html;
     }
-
+    private int lastnumber = - 1;
     private String imageGen() {
-        int random = 1 + (int)(Math.random() * 999);
-        String imageUrl = "https://thisbeachdoesnotexist.com/data/seeds-075/" + random + ".jpg";
-        Log.i("imagen", "imageGen: " + random);
+        int num;
+        do{
+            num = 1 + (int)(Math.random() * 999);
+        }while(num == lastnumber);
+        lastnumber = num;
+
+        String imageUrl = "https://thisbeachdoesnotexist.com/data/seeds-075/" + num+ ".jpg";
+        Log.i("imagen", "imageGen: " + num);
 
         return imageUrl;
     }
