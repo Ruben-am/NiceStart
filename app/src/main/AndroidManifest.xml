@@ -16,12 +16,15 @@
         android:theme="@style/Theme.NiceStart">
         <activity
             android:name=".ProfileActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.NiceStart.ActionBar" />
         <activity
             android:name=".SingUpActivity"
             android:exported="true"
             android:parentActivityName=".LoginActivity"
-            android:theme="@style/Theme.NiceStart.ActionBar" />
+            android:theme="@style/Theme.NiceStart.ActionBar"
+            />
         <activity
             android:name=".MainActivity"
             android:exported="false"
