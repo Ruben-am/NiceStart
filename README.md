@@ -13,9 +13,7 @@ Este es un proyecto para la asignatura de Desarrollo de Interfaces. La idea es c
 - WebView Dinámico: La pantalla principal genera código HTML/CSS localmente para incrustar imágenes aleatorias de fuentes externas(thisbeachdoesnotexist).
 - Animaciones: Uso de AnimationsUtil y lottie.
 
-## 📚 Librerías y Dependencias
-
-Se han integrado librerías de terceros para enriquecer la interfaz y funcionalidad:
+## Librerías y Dependencias
 
 | Librería | Uso en el proyecto |
 | :--- | :--- |
@@ -70,5 +68,3 @@ Se han integrado librerías de terceros para enriquecer la interfaz y funcionali
 > [!NOTE]
 > **Estado del proyecto**:
 > Esta app es una práctica de clase que aun no esta finalizada.
-
-
