@@ -20,4 +20,6 @@
     <string name="iv_main_background">main background image</string>
     <string name="iv_profile_userpic">user picture</string>
     <string name="fab_profile_addpic">add picture</string>
+    <string name="context_menu_copy">Copy</string>
+    <string name="context_menu_download">Download</string>
 </resources>
