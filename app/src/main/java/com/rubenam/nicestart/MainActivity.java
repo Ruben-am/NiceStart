@@ -3,8 +3,10 @@ package com.rubenam.nicestart;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -28,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        registerForContextMenu(binding.wvMainBkimg);
 
         loadImg();
 
@@ -64,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
         Log.i("imagen", "imageGen: " + num);
 
         return imageUrl;
+    }
+
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        getMenuInflater().inflate(R.menu.menu_context, menu);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
