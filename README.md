@@ -41,6 +41,8 @@ Este es un proyecto para la asignatura de Desarrollo de Interfaces. La idea es c
 
 > **Nota:** El sistema de login valida que los campos no estén vacíos y guarda el nombre de usuario localmente para mostrarlo en el Perfil.
 
+> **Nota:** El sistema de login valida que los campos no estén vacíos y guarda el nombre de usuario localmente para mostrarlo en el Perfil.
+
 ### Animations
 
 | Lottie | Splash | Refresh |
@@ -68,4 +70,5 @@ Este es un proyecto para la asignatura de Desarrollo de Interfaces. La idea es c
 > [!NOTE]
 > **Estado del proyecto**:
 > Esta app es una práctica de clase que aun no esta finalizada.
+
 
