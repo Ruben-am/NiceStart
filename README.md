@@ -35,9 +35,9 @@ Este es un proyecto para la asignatura de Desarrollo de Interfaces. La idea es c
 
 ### Functionalitis
 
-| LoginSuccess | LoginError | NavBar |
-| :---: | :---: | :---: |
-| ![LoginSuccess](./Resources/ResourcesReadMe/LoginSuccess.png) | ![LoginError](./Resources/ResourcesReadMe/LoginError.png) | ![NavBar](./Resources/ResourcesReadMe/MainNavBarMenu.png) |
+| LoginSuccess | LoginError | NavBar | DialogAlert | ContextMenu |
+| :---: | :---: | :---: | :---: | :---: |
+| ![LoginSuccess](./Resources/ResourcesReadMe/LoginSuccess.png) | ![LoginError](./Resources/ResourcesReadMe/LoginError.png) | ![NavBar](./Resources/ResourcesReadMe/MainNavBarMenu.png) | ![Dialog](./Resources/ResourcesReadMe/Dialog.png) | ![Context](./Resources/ResourcesReadMe/context.png) |
 
 > **Nota:** El sistema de login valida que los campos no estén vacíos y guarda el nombre de usuario localmente para mostrarlo en el Perfil.
 
@@ -68,3 +68,4 @@ Este es un proyecto para la asignatura de Desarrollo de Interfaces. La idea es c
 > [!NOTE]
 > **Estado del proyecto**:
 > Esta app es una práctica de clase que aun no esta finalizada.
+
