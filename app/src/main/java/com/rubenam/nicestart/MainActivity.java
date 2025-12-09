@@ -1,5 +1,6 @@
 package com.rubenam.nicestart;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -17,6 +19,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.bumptech.glide.Glide;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.rubenam.nicestart.databinding.ActivityLoginBinding;
 import com.rubenam.nicestart.databinding.ActivityMainBinding;
 
@@ -90,11 +93,25 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
             return true;
         } else if (id == R.id.others_menu_appbar) {
-            Toast.makeText(this, "Others", Toast.LENGTH_SHORT).show();
-            return true;
+            showAlertDialogButtonClicked(this);
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.context_menu_download) {
+            Toast.makeText(this, "Downloading picture...", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (id == R.id.context_menu_copy) {
+            Toast.makeText(this, "Link copied to clipboard", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+
+        return super.onContextItemSelected(item);
     }
 
     protected SwipeRefreshLayout.OnRefreshListener
@@ -110,4 +127,39 @@ public class MainActivity extends AppCompatActivity {
             binding.srMainRefresh.setRefreshing(false);
         }
     };
+
+    private void showAlertDialogButtonClicked(MainActivity mainActivity) {
+
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+
+        builder.setTitle("Others");
+        builder.setMessage("Chose an option");
+        builder.setIcon(R.drawable.ic_logo_black);
+        builder.setCancelable(true);
+
+        builder.setPositiveButton("Profile", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        builder.setNegativeButton("Do nothing", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });
+
+        builder.setNeutralButton("Exit", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                System.exit(0);
+            }
+        });
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
 }
