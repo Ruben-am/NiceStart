@@ -13,9 +13,7 @@ Este es un proyecto para la asignatura de Desarrollo de Interfaces. La idea es c
 - WebView Dinámico: La pantalla principal genera código HTML/CSS localmente para incrustar imágenes aleatorias de fuentes externas(thisbeachdoesnotexist).
 - Animaciones: Uso de AnimationsUtil y lottie.
 
-## 📚 Librerías y Dependencias
-
-Se han integrado librerías de terceros para enriquecer la interfaz y funcionalidad:
+## Librerías y Dependencias
 
 | Librería | Uso en el proyecto |
 | :--- | :--- |
@@ -37,9 +35,11 @@ Se han integrado librerías de terceros para enriquecer la interfaz y funcionali
 
 ### Functionalitis
 
-| LoginSuccess | LoginError | NavBar |
-| :---: | :---: | :---: |
-| ![LoginSuccess](./Resources/ResourcesReadMe/LoginSuccess.png) | ![LoginError](./Resources/ResourcesReadMe/LoginError.png) | ![NavBar](./Resources/ResourcesReadMe/MainNavBarMenu.png) |
+| LoginSuccess | LoginError | NavBar | DialogAlert | ContextMenu |
+| :---: | :---: | :---: | :---: | :---: |
+| ![LoginSuccess](./Resources/ResourcesReadMe/LoginSuccess.png) | ![LoginError](./Resources/ResourcesReadMe/LoginError.png) | ![NavBar](./Resources/ResourcesReadMe/MainNavBarMenu.png) | ![Dialog](./Resources/ResourcesReadMe/Dialog.png) | ![Context](./Resources/ResourcesReadMe/context.png) |
+
+> **Nota:** El sistema de login valida que los campos no estén vacíos y guarda el nombre de usuario localmente para mostrarlo en el Perfil.
 
 > **Nota:** El sistema de login valida que los campos no estén vacíos y guarda el nombre de usuario localmente para mostrarlo en el Perfil.
 
