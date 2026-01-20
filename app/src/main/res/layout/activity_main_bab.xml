@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.bottomappbar.BottomAppBar
-            android:id="@+id/bap_mb_menu"
+            android:id="@+id/bab_mb_menu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
@@ -33,7 +33,9 @@
             android:contentDescription="bottom_menu"
             android:src="@drawable/ic_add"
             app:fabSize="normal"
-            app:layout_anchor="@+id/bap_mb_menu"
+
+            app:layout_anchor="@+id/bab_mb_menu"
+
             app:tint="@android:color/white" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
