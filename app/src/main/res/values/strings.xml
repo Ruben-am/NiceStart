@@ -22,4 +22,6 @@
     <string name="fab_profile_addpic">add picture</string>
     <string name="context_menu_copy">Copy</string>
     <string name="context_menu_download">Download</string>
+    <string name="heart_menu_bottom">Favourite</string>
+    <string name="search_menu_bottom">Language</string>
 </resources>
