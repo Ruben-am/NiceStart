@@ -94,6 +94,9 @@ public class MainActivity extends AppCompatActivity {
             return true;
         } else if (id == R.id.others_menu_appbar) {
             showAlertDialogButtonClicked(this);
+        } else if (id == R.id.bab_menu_appbar) {
+            Intent intent = new Intent(this, MainBab.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

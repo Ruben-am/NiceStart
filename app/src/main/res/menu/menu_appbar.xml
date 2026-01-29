@@ -9,6 +9,13 @@
         app:showAsAction="ifRoom" />
 
     <item
+        android:id="@+id/bab_menu_appbar"
+        android:title="@string/bab_menu_appbar"
+        android:icon="@drawable/ic_bab"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
         android:id="@+id/settings_menu_appbar"
         android:title="@string/settings_menu_appbar"
         app:showAsAction="never" />

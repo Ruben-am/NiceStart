@@ -1,5 +1,7 @@
 package com.rubenam.nicestart;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -78,16 +80,15 @@ public class MainBab extends AppCompatActivity {
         option2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainBab.this, "About clicked", Toast.LENGTH_SHORT).show();
-                bottomSheetDialog.dismiss();
+                Intent intent = new Intent(MainBab.this, ProfileActivity.class);
+                startActivity(intent);
             }
         });
 
         option3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainBab.this, "Logout clicked", Toast.LENGTH_SHORT).show();
-                bottomSheetDialog.dismiss();
+                System.exit(0);
             }
         });
     }
