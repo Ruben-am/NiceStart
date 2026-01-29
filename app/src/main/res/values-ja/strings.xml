@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NiceStart</string>
+    <string name="btn_login_login">ログイン</string>
+    <string name="btn_login_singup">新規登録</string>
+    <string name="et_login_password">パスワード</string>
+    <string name="et_login_user">ユーザー名</string>
+    <string name="iv_login_background">ログイン背景画像</string>
+    <string name="iv_login_logo">アプリロゴ</string>
+    <string name="iv_singup_background">登録背景画像</string>
+    <string name="iv_singup_logo">アプリロゴ</string>
+    <string name="et_singup_passwordconfirm">パスワードの確認</string>
+    <string name="btn_singup_confirm">確認</string>
+    <string name="btn_singup_cancel">キャンセル</string>
+    <string name="et_singup_user">ユーザー名</string>
+    <string name="et_singup_password">パスワード</string>
+    <string name="iv_splash_logo">アプリロゴ</string>
+    <string name="profile_menu_appbar">プロフィール</string>
+    <string name="settings_menu_appbar">設定</string>
+    <string name="others_menu_appbar">その他</string>
+    <string name="iv_main_background">メイン背景画像</string>
+    <string name="iv_profile_userpic">ユーザー写真</string>
+    <string name="fab_profile_addpic">画像を追加</string>
+    <string name="context_menu_copy">コピー</string>
+    <string name="context_menu_download">ダウンロード</string>
+    <string name="heart_menu_bottom">お気に入り</string>
+    <string name="search_menu_bottom">言語</string>
+    <string name="bab_menu_appbar">bab</string>
+
+    <string name="lorem">ロレム・イプサムは、デザインや執筆において使用される標準的なダミーテキストです。読者が内容に気を取られず、レイアウトやデザインを確認するために使用されます。\n\nこの文章は、グラフィックデザインやウェブデザインの分野で、フォントや色の構成をテストする際によく利用されます。日本語でも同様の目的で使用されることがあります。</string>
+</resources>
