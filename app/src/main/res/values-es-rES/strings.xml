@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">NiceStart</string>
+    <string name="btn_login_login">Iniciar sesión</string>
+    <string name="btn_login_singup">Registrarse</string>
+    <string name="et_login_password">Contraseña</string>
+    <string name="et_login_user">Nombre de usuario</string>
+    <string name="iv_login_background">imagen de fondo de inicio de sesión</string>
+    <string name="iv_login_logo">logo de la aplicación</string>
+    <string name="iv_singup_background">imagen de fondo de registro</string>
+    <string name="iv_singup_logo">logo de la aplicación</string>
+    <string name="et_singup_passwordconfirm">Confirmar contraseña</string>
+    <string name="btn_singup_confirm">Confirmar</string>
+    <string name="btn_singup_cancel">Cancelar</string>
+    <string name="et_singup_user">Nombre de usuario</string>
+    <string name="et_singup_password">Contraseña</string>
+    <string name="iv_splash_logo">logo de la aplicación</string>
+    <string name="profile_menu_appbar">Perfil</string>
+    <string name="settings_menu_appbar">Ajustes</string>
+    <string name="others_menu_appbar">Otros</string>
+    <string name="iv_main_background">imagen de fondo principal</string>
+    <string name="iv_profile_userpic">foto de usuario</string>
+    <string name="fab_profile_addpic">añadir imagen</string>
+    <string name="context_menu_copy">Copiar</string>
+    <string name="context_menu_download">Descargar</string>
+    <string name="heart_menu_bottom">Favorito</string>
+    <string name="search_menu_bottom">Idioma</string>
+    <string name="bab_menu_appbar">bab</string>
+
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie dignissim nisl, ut venenatis ex accumsan eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque eu ex sed mi tempor lobortis. Etiam quis ipsum eu leo commodo volutpat at et tortor. Nullam accumsan nisl non laoreet vulputate. Etiam viverra non est ac sagittis. Vivamus dictum fermentum varius. Nunc fermentum sodales justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nVestibulum et luctus libero, auctor pharetra ligula. Proin sodales, erat eget laoreet laoreet, massa tortor sodales leo, a feugiat ligula libero at purus. Morbi dictum, risus vel dapibus facilisis, eros metus imperdiet nibh, vitae feugiat tortor leo vitae erat. Ut consequat sapien sed lorem porta ultrices at in velit. Curabitur semper enim et dui lacinia, vitae auctor augue ultricies. Fusce vulputate libero in dictum pellentesque. Donec neque dolor, finibus at sapien id, blandit aliquet ligula. Integer feugiat iaculis nibh, quis egestas velit tincidunt ac. Ut nibh magna, elementum sed ultricies ut, hendrerit nec metus. Duis ac lorem nulla. Proin sollicitudin ex nec rhoncus scelerisque. Duis efficitur ipsum eget dui molestie, vel ornare nunc faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus rhoncus laoreet rhoncus. Morbi vehicula nibh ac laoreet eleifend.\n\nEtiam mauris ex, tristique et leo et, luctus porttitor massa. Praesent aliquet aliquam lorem, in blandit lectus sodales vitae. Morbi nec urna vitae felis tempor lobortis. Fusce in enim rutrum, mollis massa vitae, consectetur enim. Sed molestie ex lectus, sit amet mattis tellus elementum sed. Morbi in ornare sem, ut eleifend mauris. Suspendisse potenti. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pretium justo malesuada metus gravida bibendum. Etiam nec ante eu arcu auctor facilisis. Cras ultrices enim nec ante rutrum accumsan. Mauris eget sollicitudin lorem. Suspendisse et convallis purus. Morbi eget dui scelerisque leo euismod aliquam vel sit amet lectus. Cras feugiat vehicula sem, quis ullamcorper purus malesuada quis. Curabitur fringilla nibh justo, nec ullamcorper ante blandit a.</string>
+</resources>
