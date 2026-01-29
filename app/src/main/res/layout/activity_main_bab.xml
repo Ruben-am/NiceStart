@@ -55,7 +55,7 @@
             app:fabSize="normal"
 
             app:layout_anchor="@+id/bab_mb_menu"
-
+            app:shapeAppearance="@style/FabCircular"
             app:tint="@android:color/white" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
